@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='../projects.html';">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <header class="header">
+        <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <i class="fab fa-youtube"></i> YouTube
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-icon"><i class="fas fa-search"></i></button>
+        </div>
+        <button class="mic-icon">
+            <i class="fas fa-microphone"></i></button>
+        <button class="profile-menu">
+            <i class="fas fa-user"></i> Profile
+        </button>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar-section">
+                <button><i class="fas fa-home"></i> Home</button>
+                <button><i class="fas fa-fire"></i> Trending</button>
+                <button><i class="fas fa-play-circle"></i> Subscriptions</button>
+                <button><i class="fas fa-book"></i> Library</button>
+            </div>
+            
+            <div class="sidebar-section">
+                <br>
+                <h3>You</h3>
+                <button><i class="fas fa-user"></i> Your channel</button>
+                <button><i class="fas fa-upload"></i> Uploads</button>
+                <button><i class="fas fa-history"></i> History</button>
+                <button><i class="fas fa-clock"></i> Watch later</button>
+            </div>
+
+            <div class="sidebar-section">
+                <br>
+                <h3>Subscriptions</h3>
+                <button><i class="fas fa-user"></i> Channel 1</button>
+                <button><i class="fas fa-user"></i> Channel 2</button>
+                <button><i class="fas fa-user"></i> Channel 3</button>
+                <button><i class="fas fa-user"></i> Channel 4</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="video-grid">
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/OKlvUwDpsto/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZWP4gUHEVpYTBSuY6HW8cl3BkzQ" alt="Video 1 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Until Dawn Remake - ПЕРШІ СМЕРТІ? | Проходження Українською | #2</h4>
+                        <p class="video-author">thetremba</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/GlhkucTVCK0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCw4t_pfhNN2YWCpTB3bC4T_H7TjQ" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Silent Hill 2 Remake - ПОЧАТОК | Проходження Українською | #1</h4>
+                        <p class="video-author">thetremba</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/H7GH5jZNtWU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDzi5V97oqLo7x1PjGDLzTETtDfQ" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">ХТОСЬ ТОЧНО ЖИВЕ ПІД МАЯКОМ...</h4>
+                        <p class="video-author">thetremba</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/4Q75AWZG6OQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCr2lk7Z6g2PEgtY-hqznf15KcuXg" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Я ПРОЖИВ 100 ДНІВ НА ОДНОМУ БЛОЦІ В МАЙНКРАФТІ І ЗБУДУВАВ ПРАПОР УКРАЇНИ ТА БАГАТО ЧОГО ІНШОГО...</h4>
+                        <p class="video-author">Лупрей - Майнкрафт Українською</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/rUvCI3h1NLI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTg6jOZu0-LBV1HrGA4Kgjb5id5Q" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">ПРОХОДЖЕННЯ ІГОР УКРАЇНСЬКОЮ 🎮 | ТОП україномовних каналів по летсплеях</h4>
+                        <p class="video-author">ANDR10XA</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/uBTSyCS-zmI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCOVYLAb6zyqKGLMhfmZ_CUVdfyPA" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">ІГРОВІ БЛОГЕРИ 👾 | ТОП україномовних каналів по оглядах ігор</h4>
+                        <p class="video-author">ANDR10XA</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/Iqe1PT1EKiY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDXEt-sODKP9WnhlhoAr0PrDYzLnw" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Це як Lethal Company, ТІЛЬКИ КРАЩЕ | Content Warning Українською</h4>
+                        <p class="video-author">thetremba</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/nGeUUcpdB0E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnrFAVPFcsm38G1uz3JSGRaizd8w" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">До них почало доходити | Упс, а що трапилось #84</h4>
+                        <p class="video-author">Aleksey Durnev</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/9s-sWDoheac/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYLlmJSm8uZEUT3UkBkOx3A9hERA" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">ВІН РУХАЄТЬСЯ КОЛИ Я НЕ ДИВЛЮСЯ | Lost Hope: Backrooms</h4>
+                        <p class="video-author">Nika Karuso</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/IEWV5IV3Zto/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0beRi7jPzixi_681fu9ak1PQdLQ" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Дурнєв та Фелікс Редька дивляться сторіс ZОМБІ #54 (napisy PL, eng subtitles)</h4>
+                        <p class="video-author">Aleksey Durnev</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/vg8SZI6Dq3I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW1pxUlLmbUOGbSo1bfdtSGPDkEA" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">ПОВНА ЧАША найдешевших продуктів з СІЛЬПО з Настею Ткаченко | Їжа Дурнєва #41</h4>
+                        <p class="video-author">Aleksey Durnev</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="https://i.ytimg.com/vi/9NJ0DMr9hNY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrot7uJ9TH0tUgCwNo-9IfeFc7aA" alt="Video 2 Thumbnail" class="video-thumbnail">
+                    <div class="video-info">
+                        <h4 class="video-title">Міша Лебіга і Тура в гостях у Тремби</h4>
+                        <p class="video-author">thetremba</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
