@@ -1,0 +1,85 @@
+.back-button {
+    padding: 8px 12px;
+    background-color: rgb(70, 161, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 100px;
+    height: 60px;
+    min-width: 50px;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    background-color: #4CAF50;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+a:last-child {
+    color: red;
+}
+
+input:disabled {
+    background-color: gray;
+}
+
+div > p {
+    font-weight: bold;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+div p {
+    font-size: 16px;
+}
+
+input:checked {
+    background-color: lightblue;
+}
+
+li > a {
+    text-decoration: underline;
+}
+
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+input[type="text"]:not(:disabled) {
+    background-color: gray;
+}
+
+p:first-child {
+    font-size: 24px;
+}
+
+.special + li {
+    text-decoration: line-through;
+}
+
+p::first-letter {
+    font-size: 36px;
+}
+
+a::after {
+    content: "↗";
+}
