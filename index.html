@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Planner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Особистий сайт студента: Заможний Нікіта Анатолійович</h1>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Головна</a>
-                </li>
-                <li>
-                    <a href="about.html">Про мене</a>
-                </li>
-                <li>
-                    <a href="projects.html">Практичні роботи</a>
-                </li>
-                <li>
-                    <a href="labs.html">Лабораторні роботи</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="home">
-            <h2>Про сайт</h2>
-            <p>Цей сайт створено як зручний інструмент для організації та демонстрації <br><br> навчальних досягнень студента: Заможний Нікіта Анатолійович. </p><br>
-            <p>Він містить практичні й лабораторні роботи з дисципліни "ООП", виконані <br><br> в рамках навчального процесу, та слугує ресурсом для систематизації знань і матеріалів.</p>
-            <p>Основна мета сайту — дати можливість викладачу і самому студенту легко отримати <br><br> доступ до його завдань, відслідковувати прогрес і зберігати важливі навчальні матеріали в одному місці.</p>
-        </section>
-        <footer>
-            <p>Контактна інформація: nikita25zamognii@gmail.com</p>
-            <a href="https://github.com/xxxchaosx">
-                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" class="icon">
-            </a>
-                        
-            <a href="https://t.me/nzamognii">
-                <img src="https://cdn-icons-png.freepik.com/256/2111/2111646.png?semt=ais_hybrid" class="icon">
-            </a>     
-        </footer>
-    </div>
+    <button class="back-button" onclick="window.location.href='../labs.html';">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+  <div class="planner">
+    <header>
+      <h1>WEEKLY PLAN</h1>
+      <div class="week-info">
+        <span>WEEK OF</span> <input type="text" class="week-input" id="week-of">
+        <span>HEALTHY HABIT</span> <input type="text" class="habit-input" id="healthy-habit">
+        <span>ROCKED IT <input type="checkbox" id="rocked-it"></span>
+        <span>ROOM FOR IMPROVEMENT <input type="checkbox" id="room-for-improvement"></span>
+      </div>
+    </header>
+
+    <aside class="todo-section">
+      <h2>TO DO</h2>
+      <div class="goal-section">
+        <h3>TOP 3 GOALS</h3>
+        <label><input type="checkbox" id="goal-1-checkbox"> <input type="text" class="task-input" id="goal-1-text" placeholder="Goal..."></label>
+        <label><input type="checkbox" id="goal-2-checkbox"> <input type="text" class="task-input" id="goal-2-text" placeholder="Goal..."></label>
+        <label><input type="checkbox" id="goal-3-checkbox"> <input type="text" class="task-input" id="goal-3-text" placeholder="Goal..."></label>
+      </div>
+      <div class="other-tasks">
+        <h3>EVERYTHING ELSE</h3>
+        <label><input type="checkbox" id="task-1-checkbox"> <input type="text" class="task-input" id="task-1-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-2-checkbox"> <input type="text" class="task-input" id="task-2-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-3-checkbox"> <input type="text" class="task-input" id="task-3-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-4-checkbox"> <input type="text" class="task-input" id="task-4-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-5-checkbox"> <input type="text" class="task-input" id="task-5-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-6-checkbox"> <input type="text" class="task-input" id="task-6-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-7-checkbox"> <input type="text" class="task-input" id="task-7-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-8-checkbox"> <input type="text" class="task-input" id="task-8-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-9-checkbox"> <input type="text" class="task-input" id="task-9-text" placeholder="Task..."></label>
+        <label><input type="checkbox" id="task-10-checkbox"> <input type="text" class="task-input" id="task-10-text" placeholder="Task..."></label>
+      </div>
+      <div class="next-week">
+        <h3>NEXT WEEK</h3>
+        <label><input type="checkbox" id="next-week-1-checkbox"> <input type="text" class="task-input" id="next-week-1-text" placeholder="Next week task..."></label>
+        <label><input type="checkbox" id="next-week-2-checkbox"> <input type="text" class="task-input" id="next-week-2-text" placeholder="Next week task..."></label>
+        <label><input type="checkbox" id="next-week-3-checkbox"> <input type="text" class="task-input" id="next-week-3-text" placeholder="Next week task..."></label>
+        <label><input type="checkbox" id="next-week-4-checkbox"> <input type="text" class="task-input" id="next-week-4-text" placeholder="Next week task..."></label>
+      </div>
+    </aside>
+
+    <section class="week-plan">
+      <div class="day" id="monday">MONDAY <input type="checkbox" id="monday-checkbox"></div>
+      <div class="day" id="tuesday">TUESDAY <input type="checkbox" id="tuesday-checkbox"></div>
+      <div class="day" id="wednesday">WEDNESDAY <input type="checkbox" id="wednesday-checkbox"></div>
+      <div class="day" id="thursday">THURSDAY <input type="checkbox" id="thursday-checkbox"></div>
+      <div class="day" id="friday">FRIDAY <input type="checkbox" id="friday-checkbox"></div>
+      <div class="day" id="saturday">SATURDAY <input type="checkbox" id="saturday-checkbox"></div>
+      <div class="day" id="sunday">SUNDAY <input type="checkbox" id="sunday-checkbox"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
