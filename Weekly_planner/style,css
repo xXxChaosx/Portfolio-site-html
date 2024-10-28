@@ -1,16 +1,139 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+/* Основний стиль сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    background-color: #70dfee;
+    background-color: #f3f4f6;
+    color: #333;
   }
+  
+  .planner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #2b6cb0;
+    margin-bottom: 10px;
+  }
+  
+  .week-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .week-info span {
+    color: #2b6cb0;
+    font-weight: bold;
+  }
+  
+  .week-info input {
+    padding: 4px 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    width: 130px;
+  }
+  
+  .todo-section {
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .todo-section h2, .goal-section h3, .other-tasks h3, .next-week h3 {
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  .goal-section, .other-tasks, .next-week {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2b6cb0;
+    cursor: pointer;
+  }
+  
+  .task-input {
+    margin-left: 12px;
+    flex-grow: 1;
+    padding: 6px 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+  }
+  
+  .week-plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .day {
+    background-color: #edf2f7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .day input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2);
+  }
+  
+  .day::before {
+    content: attr(id);
+    font-weight: bold;
+    color: #2b6cb0;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  /* Стилі для адаптивності */
+  @media (max-width: 768px) {
+    .planner {
+      grid-template-columns: 1fr;
+    }
+  }
+  
 
   .back-button {
     padding: 8px 12px;
@@ -33,102 +156,3 @@
   .back-button:hover {
     background-color: #4CAF50;
   }
-  
-  .planner {
-    width: 90%;
-    max-width: 1000px;
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 2fr 5fr;
-    gap: 10px;
-  }
-  
-  header {
-    grid-column: 1 / -1;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-  }
-  
-  header h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .week-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  
-  .week-info input[type="text"] {
-    border: none;
-    border-bottom: 1px solid #333;
-    font-size: 12px;
-    text-align: center;
-    margin: 0 5px;
-  }
-  
-  .todo-section {
-    padding-right: 10px;
-    border-right: 1px solid #ccc;
-  }
-  
-  .todo-section h2 {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  
-  .goal-section, .other-tasks, .next-week {
-    margin-bottom: 20px;
-  }
-  
-  .goal-section h3, .other-tasks h3, .next-week h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  label {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  
-  label input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  .task-input {
-    border: none;
-    border-bottom: 1px solid #ccc;
-    flex: 1;
-    font-size: 12px;
-    padding: 5px;
-  }
-  
-  .task-input:focus {
-    outline: none;
-    border-bottom: 1px solid #007bff;
-  }
-  
-  .week-plan {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .day {
-    padding: 10px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-  }
-  
