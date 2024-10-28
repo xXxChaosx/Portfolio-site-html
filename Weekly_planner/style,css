@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #70dfee;
+  }
+
+  .back-button {
+    padding: 8px 12px;
+    background-color: rgb(70, 161, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    min-width: 50px;
+  }
+
+  .back-button i {
+    margin-right: 5px;
+  }
+
+  .back-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .planner {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 2fr 5fr;
+    gap: 10px;
+  }
+  
+  header {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .week-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .week-info input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .todo-section {
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .todo-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .goal-section, .other-tasks, .next-week {
+    margin-bottom: 20px;
+  }
+  
+  .goal-section h3, .other-tasks h3, .next-week h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .task-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    flex: 1;
+    font-size: 12px;
+    padding: 5px;
+  }
+  
+  .task-input:focus {
+    outline: none;
+    border-bottom: 1px solid #007bff;
+  }
+  
+  .week-plan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
