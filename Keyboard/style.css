@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5d79f8;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.keyboard-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+/* Вигнутий провід */
+.wire {
+  position: absolute;
+  top: -399px; /* Розташування проводу */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1; /* Позаду клавіатури */
+}
+
+/* Великий прямокутник позаду всіх клавіш */
+.keyboard-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4b5db6;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+
+.keyboard {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Інші стилі для клавіш */
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.arrow-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тінь для клавіш */
+}
+
+.key:active {
+  transform: scale(0.95); /* Зменшуємо клавішу при натиску */
+  background-color: #bbb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Зменшення тіні при натиску */
+}
+
+button.key {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+}
+
+/* Решта стилів для клавіш */
+.wide { width: 70px; }
+.backspace { width: 70px; }
+.Enter { width: 85px; }
+.wides { width: 50px; }
+.wided { width: 70px; }
+.wider { width: 60px; }
+.widest { width: 85px; }
+.shift2 { width: 115px; }
+.extra-wide { width: 240px; }
+.end { width: 52.8px; }
+.num { background-color: #f0f0f0; }
+.tall { height: 85px; }
+.space { width: 250px; }
+.spacer { width: 20px; }
+.spacer2 { width: 40px; }
+
+.numpad {
+  display: grid;
+  gap: 5px;
+  align-items: start;
+}
+
+.zero {
+  width: 85px;
+}
