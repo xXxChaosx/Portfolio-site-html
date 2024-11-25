@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -56,7 +57,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    margin: 0 150px; /* Відступи зліва та справа */
+    margin: 0 250px; /* Відступи зліва та справа */
     background: #ffffff;
     border-radius: 10px;
 }
@@ -70,12 +71,14 @@ nav a:hover {
 }
 
 .hero-image img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    transform: translateX(-20px); /* Зрушує фото трохи лівіше */
-    /* Альтернативно: margin-left: -20px; */
+    width: 250px; /* Ширина фото */
+    height: 250px; /* Висота фото */
+    border-radius: 50%; /* Робимо фото круглим */
+    object-fit: cover; /* Забезпечує пропорційне масштабування */
+    margin: 0 auto; /* Центруємо фото */
+    display: block; /* Гарантуємо, що працює margin */
 }
+
 
 .btn {
     display: inline-block;
@@ -88,7 +91,7 @@ nav a:hover {
 
 .practice {
     padding: 50px;
-    margin: 0 150px; /* Відступи зліва та справа */
+    margin: 0 250px; /* Відступи зліва та справа */
     background-color: #EDF7FA; /* Колір фону */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -96,7 +99,7 @@ nav a:hover {
 
 .labs {
     padding: 50px;
-    margin: 0 150px; /* Відступи зліва та справа */
+    margin: 0 250px; /* Відступи зліва та справа */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -141,7 +144,7 @@ article {
 
 #contact {
     padding: 50px;
-    margin: 0 150px;
+    margin: 0 250px;
     background: #f8f9fa;
     border-radius: 10px;
     text-align: center;
@@ -163,4 +166,87 @@ article {
 
 .contact-icon:hover {
     color: #007bff; /* Зміна кольору при наведенні */
+}
+
+/* Основні стилі залишаються незмінними */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Зменшення шрифту для мобільних пристроїв */
+    }
+
+    nav ul {
+        flex-direction: row; /* Горизонтальне розташування пунктів меню */
+        justify-content: center; /* Центруємо меню на екрані */
+        padding: 10px 0; /* Додаємо простір зверху і знизу */
+    }
+
+    nav li {
+        margin: 0 10px; /* Відступи між пунктами меню */
+    }
+
+    nav a {
+        font-size: 14px; /* Зменшуємо розмір шрифту для компактності */
+    }
+
+    .practice, .labs, #contact {
+        margin: 20px; /* Зменшуємо відступи */
+        padding: 20px;
+    }
+
+    .pract, .labs .lab {
+        grid-template-columns: 1fr; /* Одноколонна структура */
+    }
+
+    .contact-links {
+        flex-direction: row; /* Горизонтальне розташування іконок */
+        justify-content: center; /* Центруємо іконки */
+        gap: 10px; /* Зменшуємо відстань між іконками */
+    }
+
+    .contact-icon {
+        font-size: 30px; /* Зменшуємо розмір іконок */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Змінюємо порядок: фото над текстом */
+        text-align: center; /* Центруємо всі елементи */
+        margin: 20px; /* Зменшуємо зовнішні відступи */
+        padding: 20px;
+    }
+
+    .hero-text {
+        text-align: center; /* Центруємо текст */
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        margin-bottom: 20px; /* Додаємо відступ між фото і текстом */
+    }
+
+    .hero-image img {
+        width: 150px; /* Зменшуємо розмір фото */
+        height: 150px;
+        border-radius: 50%; /* Зберігаємо круглу форму */
+        object-fit: cover;
+        margin: 0 auto; /* Центруємо фото */
+        transform: none; /* Скасовуємо зсуви */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        padding: 5px;
+    }
+
+    .hero-text h1 {
+        font-size: 18px; /* Зменшуємо розмір заголовка */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Зменшуємо розміри кнопок */
+        font-size: 14px;
+    }
 }
