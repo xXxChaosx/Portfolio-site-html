@@ -1,59 +1,166 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    line-height: 1.6;
+    color: #333;
 }
 
-header { /* Текст зверху*/
-    background-color:rgb(32, 150, 8);
-    color: white;
-    padding: 1rem; /* 1rem = 16px */
-    text-align: center;
+html {
+    scroll-behavior: smooth; /* Активує плавну прокрутку */
+}
+
+
+header {
+    background: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    position: fixed; /* Фіксує панель у верхній частині */
+    top: 0;
+    left: 0; /* Початок з лівого краю */
+    right: 0; /* Займає всю ширину */
+    background: #fff; /* Фон навігації */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для відокремлення */
+    z-index: 1000; /* Щоб залишатися поверх інших елементів */
 }
 
 nav ul {
-    background: rgb(46, 40, 40);
+    display: flex;
+    justify-content: flex-end; /* Вирівнювання елементів праворуч */
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    align-items: center; /* Вирівнювання по вертикалі */
 }
-nav ul li{
-    float: left;
+
+nav li {
+    margin: 0 15px; /* Відступи між пунктами меню */
 }
-nav ul li a {
-    display: block;
-    color: beige;
-    text-align: center;
-    padding: 14px 16px;
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff; /* Зміна кольору тексту при наведенні */
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 150px; /* Відступи зліва та справа */
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-image {
+    position: relative; /* Щоб можна було використовувати точне позиціонування */
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    transform: translateX(-20px); /* Зрушує фото трохи лівіше */
+    /* Альтернативно: margin-left: -20px; */
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4b4b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
 }
-nav ul li a:hover { /*Підсвітка при наведені*/
-    background-color: rgb(25, 25, 49);
+
+.practice {
+    padding: 50px;
+    margin: 0 150px; /* Відступи зліва та справа */
+    background-color: #EDF7FA; /* Колір фону */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-section {
-    padding: 20px;
+.labs {
+    padding: 50px;
+    margin: 0 150px; /* Відступи зліва та справа */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-
-footer {
-    background-color: rgb(37, 29, 29);
-    color: antiquewhite;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.labs .lab {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
-.icon {
-    width: 50px;
-    height: auto;
+
+.lab article .btn {
     margin-left: 20px;
 }
-.icon:last-child {
-    margin-right: 20px;
+
+.pract {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки однакової ширини */
+    gap: 20px; /* Відстань між статтями */
+}
+
+article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4b4b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px; /* Відступ від тексту */
+}
+
+.btn:hover {
+    background: #e53e3e; /* Зміна кольору при наведенні */
+}
+
+#contact {
+    padding: 50px;
+    margin: 0 150px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Відстань між іконками */
+    margin-top: 20px;
+}
+
+.contact-icon {
+    font-size: 40px; /* Розмір іконок */
+    color: #333; /* Колір іконок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+    color: #007bff; /* Зміна кольору при наведенні */
 }
