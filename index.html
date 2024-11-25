@@ -3,47 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Особистий сайт студента: Заможний Нікіта Анатолійович</h1>
-        </header>
+    <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Головна</a>
-                </li>
-                <li>
-                    <a href="about.html">Про мене</a>
-                </li>
-                <li>
-                    <a href="projects.html">Практичні роботи</a>
-                </li>
-                <li>
-                    <a href="labs.html">Лабораторні роботи</a>
-                </li>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#practice">Practice</a></li>
+                <li><a href="#labs">Labs</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
-        <section id="about">
-            <h2>Про мене</h2>
-            <p>ПІБ: Заможний Нікіта Анатолійович</p>
-            <p>Група: ТЦР-22</p>
-            <p>Дата народження: 25.03.2006</p>
-            <p>Опис: Я — студент Державного університету <br>інформаційно комунікаційних технологій (ДУІКТ). <br>Завжди прагну досягати високих результатів у <br>навчанні, маючи міцні знання та добрі оцінки. <br>Моя головна мета — максимально засвоювати матеріал і <br>застосовувати його на практиці. Відповідально підходжу <br>до кожного завдання, виконуючи його якісно та вчасно.</p>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <h1>Привіт, Я Заможний Нікіта Анатолійович,<br>Група ТЦР-22</h1>
+                <p>Я — студент Державного університету
+                    інформаційно комунікаційних технологій (ДУІКТ).
+                    Завжди прагну досягати високих результатів у
+                    навчанні, маючи міцні знання та добрі оцінки.
+                    Моя головна мета — максимально засвоювати матеріал і
+                    застосовувати його на практиці. Відповідально підходжу
+                    до кожного завдання, виконуючи його якісно та вчасно.</p>
+                <a href="#" class="btn">Download Resume</a>
+            </div>
+            <div class="hero-image">
+                <img src="photo\photo_2024-11-25_15-19-30.jpg" alt="Profile Picture">
+            </div>
         </section>
-        <footer>
-            <p>Контактна інформація: nikita25zamognii@gmail.com</p>
-            <a href="https://github.com/xxxchaosx">
-                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" class="icon">
-            </a>
-                        
-            <a href="https://t.me/nzamognii">
-                <img src="https://cdn-icons-png.freepik.com/256/2111/2111646.png?semt=ais_hybrid" class="icon">
-            </a>     
-        </footer>
-    </div>
+
+        <section id="practice" class="practice"> <!-- Додано id -->
+            <h2>Практичні завдання</h2>
+            <div class="pract">
+                <article>
+                    <h3>Практича робота №1</h3>
+                    <p>Розробити сайт з таблицею розкладу занять</p>
+                    <a href="Class-schedule/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Практична робота №2</h3>
+                    <p>Доробити форму реєстрації</p>
+                    <a href="Registration/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Практична робота №3</h3>
+                    <p>Створити копію головної сторінки YouTube</p>
+                    <a href="Copy_of_YouTube/index2.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Практична робота №4</h3>
+                    <p>Створити сайт який буде містити в собі клавіатуру</p>
+                    <a href="Keyboard/index.html" class="btn">Перейти</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="labs" class="labs">
+            <h2>Лабораторні</h2>
+            <div class="works">
+                <article>
+                    <h3>Лабораторна робота №1</h3>
+                    <p>Створити форму реєстрації</p>
+                    <a href="Registration/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Лабораторна робота №2</h3>
+                    <p>Зробити CSS Selectors Challenge</p>
+                    <a href="Lab2/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Лабораторна робота №3</h3>
+                    <p>Створити копію головної сторінки YouTube</p>
+                    <a href="Copy_of_YouTube/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Лабораторна робота №4</h3>
+                    <p>Створити тижневий планер</p>
+                    <a href="Weekly_planner/index.html" class="btn">Перейти</a>
+                </article>
+                <article>
+                    <h3>Лабораторна робота №5</h3>
+                    <p>Змінити дизайн головної сторінки</p>
+                    <a href="index.html" class="btn">Перейти</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacts</h2>
+            <div class="contact-links">
+                <a href="https://t.me/nzamognii" target="_blank" class="contact-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.instagram.com/nzamognii/" target="_blank" class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/xXxChaosx" target="_blank" class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
