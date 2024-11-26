@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(70, 161, 221);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
 
 
 .registration-form {
-    background-color: rgb(70, 161, 221);
+    background-color: white;
     padding: 30px;
     border-radius: 15px;
     width: 350px;
@@ -90,7 +90,7 @@ input:focus, select:focus {
 
 h1 {
     color: #002244; 
-    background-color: rgb(70, 161, 221); 
+    background-color: white; 
     padding: 10px;
     border-radius: 5px;
     text-align: center;
