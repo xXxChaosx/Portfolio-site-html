@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(66, 127, 148);
+    background-color: rgb(70, 161, 221);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
 
 
 .registration-form {
-    background-color: rgb(70, 161, 221);
+    background-color: white;
     padding: 30px;
     border-radius: 15px;
     width: 350px;
