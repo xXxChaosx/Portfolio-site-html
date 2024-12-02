@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sky {
+  background: linear-gradient(to bottom, #87CEEB, #ADD8E6);
+  height: 70%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ground {
+  background: #35c035;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.cloud {
+  position: absolute;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 30px 30px 0 0 #FFF, -30px 30px 0 0 #FFF;
+  width: 100px;
+  height: 50px;
+  top: 10%;
+  animation: float 10s linear infinite;
+}
+
+.cloud:nth-child(2) {
+  top: 20%;
+  left: 60%;
+  animation-duration: 12s;
+}
+
+@keyframes float {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(150%);
+  }
+}
+
+.flying-pokemon {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: url('https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif') no-repeat center;
+  background-size: contain;
+  animation: fly 8s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(100vw); /* Летить вправо, знову нахил */
+  }
+  30% {
+    transform: translateX(100vw); /* Летить вправо, знову нахил */
+  }
+  40% {
+    transform: translateX(100vw) rotate(-30deg); /* Летить вправо, знову нахил */
+  }
+  70% {
+    transform: translateX(50vw) translateY(-100px) rotate(-180deg); /* Петля вверх з обертанням */
+  }
+  100% {
+    transform: translateX(-150px) translateY(0) rotate(-360deg); /* Кінець анімації - ліво */
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -150px;
+  }
+}
+
+.running-pikachu {
+  position: absolute;
+  bottom: 10px;
+  left: 100%;
+  width: 150px;
+  height: 150px;
+  background: url('https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif') no-repeat center;
+  background-size: contain;
+  animation: moveLeft 20s linear infinite, run 2s infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: rotate(10deg) translateY(0); /* Нахил вправо, на рівні землі */
+  }
+  25% {
+    transform: rotate(10deg) translateY(-20px); /* Нахил вправо, стрибок */
+  }
+  50% {
+    transform: rotate(-10deg) translateY(0); /* Нахил вліво, повернення на землю */
+  }
+  100% {
+    transform: rotate(10deg) translateY(0); /* Повернення вправо на рівень землі */
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -150px;
+  }
+}
