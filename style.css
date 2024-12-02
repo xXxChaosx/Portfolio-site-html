@@ -1,252 +1,273 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
 html {
-    scroll-behavior: smooth; /* Активує плавну прокрутку */
+  scroll-behavior: smooth; /* Активує плавну прокрутку */
 }
 
 
 header {
-    background: #fff;
-    padding: 20px 0;
+  background: #fff;
+  padding: 20px 0;
 }
 
 nav {
-    position: fixed; /* Фіксує панель у верхній частині */
-    top: 0;
-    left: 0; /* Початок з лівого краю */
-    right: 0; /* Займає всю ширину */
-    background: #fff; /* Фон навігації */
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для відокремлення */
-    z-index: 1000; /* Щоб залишатися поверх інших елементів */
+  position: fixed; /* Фіксує панель у верхній частині */
+  top: 0;
+  left: 0; /* Початок з лівого краю */
+  right: 0; /* Займає всю ширину */
+  background: #fff; /* Фон навігації */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для відокремлення */
+  z-index: 1000; /* Щоб залишатися поверх інших елементів */
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end; /* Вирівнювання елементів праворуч */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center; /* Вирівнювання по вертикалі */
+  display: flex;
+  justify-content: flex-end; /* Вирівнювання елементів праворуч */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Вирівнювання по вертикалі */
 }
 
 nav li {
-    margin: 0 15px; /* Відступи між пунктами меню */
+  margin: 0 15px; /* Відступи між пунктами меню */
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #007bff; /* Зміна кольору тексту при наведенні */
+  color: #007bff; /* Зміна кольору тексту при наведенні */
 }
 
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    margin: 0 250px; /* Відступи зліва та справа */
-    background: #ffffff;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 0 250px; /* Відступи зліва та справа */
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 .hero-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .hero-image {
-    position: relative; /* Щоб можна було використовувати точне позиціонування */
+  position: relative; /* Щоб можна було використовувати точне позиціонування */
 }
 
 .hero-image img {
-    width: 250px; /* Ширина фото */
-    height: 250px; /* Висота фото */
-    border-radius: 50%; /* Робимо фото круглим */
-    object-fit: cover; /* Забезпечує пропорційне масштабування */
-    margin: 0 auto; /* Центруємо фото */
-    display: block; /* Гарантуємо, що працює margin */
+  width: 250px; /* Ширина фото */
+  height: 250px; /* Висота фото */
+  border-radius: 50%; /* Робимо фото круглим */
+  object-fit: cover; /* Забезпечує пропорційне масштабування */
+  margin: 0 auto; /* Центруємо фото */
+  display: block; /* Гарантуємо, що працює margin */
 }
 
 
 .btn {
-    display: inline-block;
-    background: #ff4b4b;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+  display: inline-block;
+  background: #ff4b4b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .practice {
-    padding: 50px;
-    margin: 0 250px; /* Відступи зліва та справа */
-    background-color: #EDF7FA; /* Колір фону */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+  margin: 0 250px; /* Відступи зліва та справа */
+  background-color: #EDF7FA; /* Колір фону */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .labs {
-    padding: 50px;
-    margin: 0 250px; /* Відступи зліва та справа */
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+  margin: 0 250px; /* Відступи зліва та справа */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.labs .lab {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.labs .works {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.lab article .btn {
-    margin-left: 20px;
+.labs article {
+  display: flex; /* Вирівнюємо текст і зображення в рядок */
+  align-items: center; /* Вирівнювання по вертикалі */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.labs article img {
+  width: 150px; /* Розмір зображення */
+  height: 150px;
+  border-radius: 10px; /* Злегка округлюємо краї */
+  margin-right: 20px; /* Відступ між зображенням і текстом */
+  object-fit: cover; /* Пропорційне обрізання */
+}
+
+.labs article .text {
+  flex: 1; /* Забезпечує, щоб текст займав доступний простір */
+}
+
+.labs article .btn {
+  margin-top: 10px;
 }
 
 .pract {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки однакової ширини */
-    gap: 20px; /* Відстань між статтями */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки однакової ширини */
+  gap: 20px; /* Відстань між статтями */
 }
 
 article {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
-    display: inline-block;
-    background: #ff4b4b;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 15px; /* Відступ від тексту */
+  display: inline-block;
+  background: #ff4b4b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px; /* Відступ від тексту */
 }
 
 .btn:hover {
-    background: #e53e3e; /* Зміна кольору при наведенні */
+  background: #e53e3e; /* Зміна кольору при наведенні */
 }
 
 #contact {
-    padding: 50px;
-    margin: 0 250px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    text-align: center;
+  padding: 50px;
+  margin: 0 250px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Відстань між іконками */
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Відстань між іконками */
+  margin-top: 20px;
 }
 
 .contact-icon {
-    font-size: 40px; /* Розмір іконок */
-    color: #333; /* Колір іконок */
-    text-decoration: none;
-    transition: color 0.3s ease;
+  font-size: 40px; /* Розмір іконок */
+  color: #333; /* Колір іконок */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-icon:hover {
-    color: #007bff; /* Зміна кольору при наведенні */
+  color: #007bff; /* Зміна кольору при наведенні */
 }
 
 /* Основні стилі залишаються незмінними */
 
 @media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Зменшення шрифту для мобільних пристроїв */
-    }
+  body {
+      font-size: 14px; /* Зменшення шрифту для мобільних пристроїв */
+  }
 
-    nav ul {
-        flex-direction: row; /* Горизонтальне розташування пунктів меню */
-        justify-content: center; /* Центруємо меню на екрані */
-        padding: 10px 0; /* Додаємо простір зверху і знизу */
-    }
+  nav ul {
+      flex-direction: row; /* Горизонтальне розташування пунктів меню */
+      justify-content: center; /* Центруємо меню на екрані */
+      padding: 10px 0; /* Додаємо простір зверху і знизу */
+  }
 
-    nav li {
-        margin: 0 10px; /* Відступи між пунктами меню */
-    }
+  nav li {
+      margin: 0 10px; /* Відступи між пунктами меню */
+  }
 
-    nav a {
-        font-size: 14px; /* Зменшуємо розмір шрифту для компактності */
-    }
+  nav a {
+      font-size: 14px; /* Зменшуємо розмір шрифту для компактності */
+  }
 
-    .practice, .labs, #contact {
-        margin: 20px; /* Зменшуємо відступи */
-        padding: 20px;
-    }
+  .practice, .labs, #contact {
+      margin: 20px; /* Зменшуємо відступи */
+      padding: 20px;
+  }
 
-    .pract, .labs .lab {
-        grid-template-columns: 1fr; /* Одноколонна структура */
-    }
+  .pract, .labs .lab {
+      grid-template-columns: 1fr; /* Одноколонна структура */
+  }
 
-    .contact-links {
-        flex-direction: row; /* Горизонтальне розташування іконок */
-        justify-content: center; /* Центруємо іконки */
-        gap: 10px; /* Зменшуємо відстань між іконками */
-    }
+  .contact-links {
+      flex-direction: row; /* Горизонтальне розташування іконок */
+      justify-content: center; /* Центруємо іконки */
+      gap: 10px; /* Зменшуємо відстань між іконками */
+  }
 
-    .contact-icon {
-        font-size: 30px; /* Зменшуємо розмір іконок */
-    }
+  .contact-icon {
+      font-size: 30px; /* Зменшуємо розмір іконок */
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse; /* Змінюємо порядок: фото над текстом */
-        text-align: center; /* Центруємо всі елементи */
-        margin: 20px; /* Зменшуємо зовнішні відступи */
-        padding: 20px;
-    }
+  .hero {
+      flex-direction: column-reverse; /* Змінюємо порядок: фото над текстом */
+      text-align: center; /* Центруємо всі елементи */
+      margin: 20px; /* Зменшуємо зовнішні відступи */
+      padding: 20px;
+  }
 
-    .hero-text {
-        text-align: center; /* Центруємо текст */
-        margin-bottom: 20px;
-    }
+  .hero-text {
+      text-align: center; /* Центруємо текст */
+      margin-bottom: 20px;
+  }
 
-    .hero-image {
-        margin-bottom: 20px; /* Додаємо відступ між фото і текстом */
-    }
+  .hero-image {
+      margin-bottom: 20px; /* Додаємо відступ між фото і текстом */
+  }
 
-    .hero-image img {
-        width: 150px; /* Зменшуємо розмір фото */
-        height: 150px;
-        border-radius: 50%; /* Зберігаємо круглу форму */
-        object-fit: cover;
-        margin: 0 auto; /* Центруємо фото */
-        transform: none; /* Скасовуємо зсуви */
-    }
+  .hero-image img {
+      width: 150px; /* Зменшуємо розмір фото */
+      height: 150px;
+      border-radius: 50%; /* Зберігаємо круглу форму */
+      object-fit: cover;
+      margin: 0 auto; /* Центруємо фото */
+      transform: none; /* Скасовуємо зсуви */
+  }
 }
 
 @media (max-width: 480px) {
-    nav ul {
-        padding: 5px;
-    }
+  nav ul {
+      padding: 5px;
+  }
 
-    .hero-text h1 {
-        font-size: 18px; /* Зменшуємо розмір заголовка */
-    }
+  .hero-text h1 {
+      font-size: 18px; /* Зменшуємо розмір заголовка */
+  }
 
-    .btn {
-        padding: 8px 15px; /* Зменшуємо розміри кнопок */
-        font-size: 14px;
-    }
+  .btn {
+      padding: 8px 15px; /* Зменшуємо розміри кнопок */
+      font-size: 14px;
+  }
 }
