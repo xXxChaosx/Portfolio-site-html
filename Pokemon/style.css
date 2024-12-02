@@ -4,6 +4,28 @@ body {
   font-family: sans-serif;
 }
 
+.back-button {
+    padding: 8px 12px;
+    background-color: rgb(70, 161, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 100px;
+    height: 60px;
+    min-width: 50px;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    background-color: #4CAF50;
+}
+
 .scene {
   position: relative;
   width: 100vw;
