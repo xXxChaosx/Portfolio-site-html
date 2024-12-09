@@ -1,0 +1,27 @@
+@import './variables.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/main/main.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/tree/tree.scss';
+@import '../blocks/left-block/verse.scss';
+@import '../blocks/right-block/verse_right.scss';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    background: $background-gradient;
+    color: $text-color;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main__image {
+    width: 150px; /* Задайте потрібний розмір */
+    height: auto;
+    margin-top: 10px;
+    border-radius: $border-radius; /* Додає округлення, якщо потрібно */
+}

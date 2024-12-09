@@ -1,0 +1,12 @@
+.tree {
+    position: relative; /* Встановлюємо як основний контейнер для накладання */
+    text-align: center; /* Вирівнюємо ялинку по центру */
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        width: 400px; /* Розмір ялинки */
+        margin: 0 auto;
+        z-index: 1; /* Рівень ялинки */
+    }
+}

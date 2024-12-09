@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.header {
+  text-align: center;
+  background-color: rgb(160, 41, 41);
+  color: white;
+  padding: 20px;
+}
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.header__subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.main {
+  position: absolute; /* Накладаємо main поверх ялинки */
+  top: 560px; /* Відступ зверху */
+  left: 50%;
+  transform: translateX(-50%); /* Центрування */
+  width: 40%; /* Ширина */
+  height: auto; /* Висота залежить від контенту */
+  background: linear-gradient(to bottom, #046b04 25%, #773c12 25%); /* Вертикальний градієнт */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Поверх ялинки */
+  border-radius: 15px; /* Округлені кути */
+  color: #fff; /* Білий текст для контрасту */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Гарантує, що ширина включає padding та border */
+  width: 100%;
+  overflow-x: hidden; /* Запобігає горизонтальній прокрутці */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1; /* Розтягує основний контент, якщо його мало */
+}
+
+.main__greeting {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: rgba(209, 178, 2, 0.9843137255); /* Темно-синій фон */
+  color: #000000; /* Білий текст */
+  text-align: center;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ширина 100% від вікна */
+  box-sizing: border-box; /* Враховує padding у ширині */
+  z-index: 2; /* Завжди поверх інших елементів */
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.tree {
+  position: relative; /* Встановлюємо як основний контейнер для накладання */
+  text-align: center; /* Вирівнюємо ялинку по центру */
+}
+.tree__image {
+  max-width: 100%;
+  height: auto;
+  width: 400px; /* Розмір ялинки */
+  margin: 0 auto;
+  z-index: 1; /* Рівень ялинки */
+}
+
+.verse {
+  position: fixed; /* Закріплюємо блок ліворуч */
+  top: 200px; /* Відступ від верхнього краю */
+  left: 20px;
+  width: 400px; /* Ширина блоку */
+  background-color: rgb(160, 41, 41); /* Напівпрозорий фон */
+  color: white;
+  padding: 20px;
+  z-index: 2; /* Залишаємо його поверх інших елементів */
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.verse p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: left; /* Вирівнювання тексту */
+}
+
+.verse_right {
+  position: fixed; /* Закріплюємо блок ліворуч */
+  top: 200px; /* Відступ від верхнього краю */
+  right: 20px;
+  width: 400px; /* Ширина блоку */
+  background-color: rgb(160, 41, 41); /* Напівпрозорий фон */
+  color: white;
+  padding: 20px;
+  z-index: 2; /* Залишаємо його поверх інших елементів */
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.verse_right p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: left; /* Вирівнювання тексту */
+}
+
+body {
+  margin: 0;
+  font-family: "Arial, sans-serif";
+  background: #f9f9f9;
+  color: #ffffff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main__image {
+  width: 150px; /* Задайте потрібний розмір */
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px; /* Додає округлення, якщо потрібно */
+}
+
+/*# sourceMappingURL=main.css.map */

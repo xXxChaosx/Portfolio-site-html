@@ -1,0 +1,18 @@
+.verse_right {
+    position: fixed; /* Закріплюємо блок ліворуч */
+    top: 200px; /* Відступ від верхнього краю */
+    right: 20px;
+    width: 400px; /* Ширина блоку */
+    background-color: rgb(160, 41, 41); /* Напівпрозорий фон */
+    color: white;
+    padding: 20px;
+    z-index: 2; /* Залишаємо його поверх інших елементів */
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.verse_right p {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left; /* Вирівнювання тексту */
+}
