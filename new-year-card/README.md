@@ -53,14 +53,17 @@ project/
 │   ├── tree/
 │   │   ├── tree.html
 │   │   ├── tree.scss
-│   ├── verse/
-│       ├── verse.html
-│       ├── verse.scss
+│   ├── left-block/
+│   │   ├── verse.html
+│   │   ├── verse.scss
+│   ├── right-block/
+│       ├── verse_right.html
+│       ├── verse_right.scss
 │
 ├── assets/
 │   ├── images/
 │   │   ├── snowman.gif
-│   │   ├── christmas-tree.png
+│   │   ├── christmas_tree.png
 │
 ├── styles/
 │   ├── main.scss
