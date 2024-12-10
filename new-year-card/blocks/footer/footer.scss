@@ -1,14 +1,14 @@
 .footer {
-    background-color: #d1b202fb; /* Темно-синій фон */
-    color: #000000; /* Білий текст */
+    background-color: #d1b202fb; 
+    color: #000000; 
     text-align: center;
     padding: 10px 20px;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Ширина 100% від вікна */
-    box-sizing: border-box; /* Враховує padding у ширині */
-    z-index: 2; /* Завжди поверх інших елементів */
+    width: 100%; 
+    box-sizing: border-box; 
+    z-index: 2;
 }
 
 .footer__text {
