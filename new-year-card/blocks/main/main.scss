@@ -1,24 +1,23 @@
 .main {
-    position: absolute; /* Накладаємо main поверх ялинки */
-    top: 560px; /* Відступ зверху */
+    position: absolute; 
     left: 50%;
-    transform: translateX(-50%); /* Центрування */
-    width: 40%; /* Ширина */
-    height: auto; /* Висота залежить від контенту */
+    transform: translateX(-50%); 
+    width: 40%; 
+    height: auto; 
     background: linear-gradient(to bottom, #046b04 25%, #773c12 25%); /* Вертикальний градієнт */
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 2; /* Поверх ялинки */
-    border-radius: 15px; /* Округлені кути */
-    color: #fff; /* Білий текст для контрасту */
+    z-index: 2; 
+    border-radius: 15px;
+    color: #fff; 
     
 }
 html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Гарантує, що ширина включає padding та border */
+    box-sizing: border-box; 
     width: 100%;
-    overflow-x: hidden; /* Запобігає горизонтальній прокрутці */
+    overflow-x: hidden;
 }
 
 body {
@@ -27,7 +26,7 @@ body {
 }
 
 .main {
-    flex: 1; /* Розтягує основний контент, якщо його мало */
+    flex: 1; 
 }
 
 
